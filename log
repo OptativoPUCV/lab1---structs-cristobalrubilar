@@ -127,3 +127,21 @@ exercises.c:169:8: error: ‘Libro’ has no member named ‘anioNacimiento’
       |        ^~
 Compilation failed
 6b8e8fb
+Thu 14 Mar 2024 02:04:39 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:168:15: error: ‘Libro’ has no member named ‘nombreAutor’
+  168 |   strcpy(libro->nombreAutor, nombreAutor);
+      |               ^~
+exercises.c:169:8: error: ‘libro’ is a pointer; did you mean to use ‘->’?
+  169 |   libro.anioNacimiento = anioNacimiento;
+      |        ^
+      |        ->
+exercises.c:170:8: error: ‘libro’ is a pointer; did you mean to use ‘->’?
+  170 |   libro.anioPublicacion = anioPublicacion;
+      |        ^
+      |        ->
+Compilation failed
+bd6a5de
