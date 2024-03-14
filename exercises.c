@@ -126,7 +126,6 @@ int checkSorted(int arr[], int size)
       else
       {
         ordenAsc = 0;  
-        indice = 0;
         break;
       }
     }
@@ -139,14 +138,12 @@ int checkSorted(int arr[], int size)
       else
       {
         ordenDesc = 0; 
-        indice = 0;
         break;
       }
     }
   
   if(ordenDesc == -1) return -1;
   if(ordenAsc == 1) return 1;
-  
   return 0;
 
   
