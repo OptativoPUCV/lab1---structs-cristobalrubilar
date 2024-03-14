@@ -246,3 +246,32 @@ exercises.c:211:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 af7b79a
+Thu 14 Mar 2024 01:44:24 PM UTC: 
+ exercises.c | 80 +++++++++++++++++++++----------------------------------------
+ 1 file changed, 27 insertions(+), 53 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:169:29: error: statement with no effect [-Werror=unused-value]
+  169 |   for(int i = 0; i < size ; i
+      |                             ^
+exercises.c:169:30: error: expected ‘)’ before ‘{’ token
+  169 |   for(int i = 0; i < size ; i
+      |      ~                       ^
+      |                              )
+  170 |     {
+      |     ~                         
+exercises.c:182:1: error: expected expression before ‘}’ token
+  182 | }
+      | ^
+exercises.c:167:9: error: unused variable ‘actual’ [-Werror=unused-variable]
+  167 |   Nodo *actual = NULL;
+      |         ^~~~~~
+exercises.c:166:9: error: unused variable ‘primero’ [-Werror=unused-variable]
+  166 |   Nodo *primero = NULL;
+      |         ^~~~~~~
+exercises.c:182:1: error: control reaches end of non-void function [-Werror=return-type]
+  182 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d4ad9d3
