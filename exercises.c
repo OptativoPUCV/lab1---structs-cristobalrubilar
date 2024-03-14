@@ -116,31 +116,24 @@ int checkSorted(int arr[], int size)
   int ordenAsc = 1;
   int ordenDesc = -1;
 
-  int indice = 0;
-  while(indice < size -1)
+  for (int i = 0 ; i < size -1 ; i++)
     {
-      if (arr[indice] < arr[indice +1])
+      if (arr[i] > arr[i+1])
       {
-        indice++;
-      }
-      else
-      {
-        ordenAsc = 0;  
+        ordenAsc = 0;
         break;
       }
     }
-  while(indice < size -1)
+
+  for (int i = 0 ; i < size -1 ; i++)
     {
-      if (arr[indice] > arr[indice +1])
+      if (arr[i] < arr[i+1])
       {
-        indice++;
-      }
-      else
-      {
-        ordenDesc = 0; 
+        ordenDesc = 0;
         break;
       }
     }
+
   
   if(ordenDesc == -1) return -1;
   if(ordenAsc == 1) return 1;
