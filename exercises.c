@@ -114,7 +114,6 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size)
 { 
   int ordenAsc = 1;
-  int desordenado = 0;
   int ordenDesc = -1;
 
   int indice = 0;
@@ -127,12 +126,10 @@ int checkSorted(int arr[], int size)
       else
       {
         ordenAsc = 0;  
+        indice = 0;
+        break;
       }
     }
-  if(ordenAsc == 1) return 1;
-
-  indice = 0;
-  
   while(indice < size -1)
     {
       if (arr[indice] > arr[indice +1])
@@ -141,14 +138,16 @@ int checkSorted(int arr[], int size)
       }
       else
       {
-        ordenDesc = 0;  
+        ordenDesc = 0; 
+        indice = 0;
+        break;
       }
     }
+  
   if(ordenDesc == -1) return -1;
-
-  else{
-    return 0;
-  }
+  if(ordenAsc == 1) return 1;
+  
+  return 0;
 
   
 }

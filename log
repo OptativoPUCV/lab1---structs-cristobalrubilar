@@ -87,3 +87,18 @@ exercises.c:117:7: error: unused variable ‘desordenado’ [-Werror=unused-vari
 cc1: all warnings being treated as errors
 Compilation failed
 2391203
+Thu 14 Mar 2024 01:44:41 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+Thu 14 Mar 2024 01:44:51 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+Thu 14 Mar 2024 01:45:12 AM UTC: 
+ exercises.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+Thu 14 Mar 2024 01:47:01 AM UTC: 
+ exercises.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+ tests:  0|3
+total_score: 40/70
+29d027d
