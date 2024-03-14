@@ -191,3 +191,9 @@ exercises.c:168:15: error: ‘Libro’ has no member named ‘nombreAutor’
       |               ^~
 Compilation failed
 bc0c744
+Thu 14 Mar 2024 02:06:56 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+5bf5811
