@@ -168,3 +168,16 @@ exercises.c:168:15: error: ‘Libro’ has no member named ‘nombreAutor’
       |               ^~
 Compilation failed
 de723f6
+Thu 14 Mar 2024 02:06:23 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:168:15: error: ‘Libro’ has no member named ‘nombreAutor’
+  168 |   strcpy(libro->nombreAutor, nombreAutor);
+      |               ^~
+exercises.c:170:8: error: expected identifier or ‘(’ before ‘->’ token
+  170 |   Libro->anioPublicacion = anioPublicacion;
+      |        ^~
+Compilation failed
+9600855
