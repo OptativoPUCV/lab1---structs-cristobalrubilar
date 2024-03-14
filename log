@@ -211,3 +211,9 @@ exercises.c:192:9: error: unused variable ‘primero’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 86588b6
+Thu 14 Mar 2024 02:23:32 AM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  0|1
+total_score: 60/70
+098f3bc

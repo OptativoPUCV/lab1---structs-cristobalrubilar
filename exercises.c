@@ -189,8 +189,6 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 {
-  Nodo *primero = NULL;
-  Nodo *actual = NULL;
   
   return NULL; 
 }
