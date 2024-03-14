@@ -9,14 +9,36 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
+int findMax(int arr[], int size)
+{
+    int datoMayor = arr[0];
+
+    for (int i = 0 ; i < size ; i++)
+    {
+        if (arr[i] > datoMayor)
+        {
+            datoMayor = arr[i];
+        }
+    }
+  return datoMayor;
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) 
+{
+  int temp;
+  for (int i = size - 1 ; i != - 1 ; i--)
+    {
+      temp = arr[i];
+      arr[i] = arr[size -i -1];
+      arr[size -i -1] = temp;
+    }
+  
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -24,7 +46,22 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+ void *filterEvenNumbers(int arr[], int size, int *newSize) 
+{
+  int nuevaTalla = 0;
+  int *nuevoArr = malloc(sizeof(int) * size);
+  for (int i = 0 ; i < size ;i++)
+  {
+    if (arr[i] % 2 == 0)
+    {
+      nuevoArr[nuevaTalla] = arr[i];
+      nuevaTalla++;
+    }
+  }
+  *newSize = nuevaTalla;
+  return nuevoArr;
+  
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -33,7 +70,26 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) 
+{
+  int nuevaTalla = 0;
+  for (int i = 0 ; i < size1 ; i++)
+    {
+      for (int j = 0 ; j < size2 ; j++)
+        {
+          if (arr[i] < arr[j])
+          {
+            result[nuevaTalla] = arr[i];
+            nuevaTalla++;
+          }
+          else
+          {
+            result[nuevaTalla] = arr[j];
+            nuevaTalla++;
+          }
+        }
+    }
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
