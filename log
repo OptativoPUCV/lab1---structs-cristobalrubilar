@@ -76,3 +76,14 @@ Thu 14 Mar 2024 01:16:45 AM UTC:
  tests:  0|3
 total_score: 40/70
 effbd01
+Thu 14 Mar 2024 01:44:22 AM UTC: 
+ exercises.c | 42 +++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 41 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:117:7: error: unused variable ‘desordenado’ [-Werror=unused-variable]
+  117 |   int desordenado = 0;
+      |       ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2391203
