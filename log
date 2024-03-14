@@ -145,3 +145,16 @@ exercises.c:170:8: error: ‘libro’ is a pointer; did you mean to use ‘->’
       |        ->
 Compilation failed
 bd6a5de
+Thu 14 Mar 2024 02:05:21 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:168:15: error: ‘Libro’ has no member named ‘nombreAutor’
+  168 |   strcpy(libro->nombreAutor, nombreAutor);
+      |               ^~
+exercises.c:169:8: error: ‘Libro’ has no member named ‘anioNacimiento’
+  169 |   libro->anioNacimiento = anioNacimiento;
+      |        ^~
+Compilation failed
+d090923
