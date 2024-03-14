@@ -217,3 +217,32 @@ Thu 14 Mar 2024 02:23:32 AM UTC:
  tests:  0|1
 total_score: 60/70
 098f3bc
+Thu 14 Mar 2024 01:43:45 PM UTC: 
+ exercises.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:195:29: error: statement with no effect [-Werror=unused-value]
+  195 |   for(int i = 0; i < size ; i
+      |                             ^
+exercises.c:195:30: error: expected ‘)’ before ‘{’ token
+  195 |   for(int i = 0; i < size ; i
+      |      ~                       ^
+      |                              )
+  196 |     {
+      |     ~                         
+exercises.c:211:1: error: expected expression before ‘}’ token
+  211 | }
+      | ^
+exercises.c:193:9: error: unused variable ‘actual’ [-Werror=unused-variable]
+  193 |   Nodo *actual = NULL;
+      |         ^~~~~~
+exercises.c:192:9: error: unused variable ‘primero’ [-Werror=unused-variable]
+  192 |   Nodo *primero = NULL;
+      |         ^~~~~~~
+exercises.c:211:1: error: control reaches end of non-void function [-Werror=return-type]
+  211 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+af7b79a
