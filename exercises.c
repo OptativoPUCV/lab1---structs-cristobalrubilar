@@ -31,7 +31,7 @@ invierta el orden de sus elementos.
 void reverseArray(int arr[], int size) 
 {
   int temp;
-  for (int i = size - 1 ; i != - 1 ; i--)
+  for (int i = size - 1 ; i >= 0 ; i--)
     {
       temp = arr[i];
       arr[i] = arr[size -i -1];
@@ -72,23 +72,7 @@ arreglos en un tercer arreglo también ordenado.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-  int nuevaTalla = 0;
-  for (int i = 0 ; i < size1 ; i++)
-    {
-      for (int j = 0 ; j < size2 ; j++)
-        {
-          if (arr1[i] < arr2[j])
-          {
-            result[nuevaTalla] = arr1[i];
-            nuevaTalla++;
-          }
-          else
-          {
-            result[nuevaTalla] = arr2[j];
-            nuevaTalla++;
-          }
-        }
-    }
+  
 }
 
 /*
