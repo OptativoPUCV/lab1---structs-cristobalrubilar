@@ -11,3 +11,15 @@ exercises.c:80:15: error: ‘arr’ undeclared (first use in this function); did
 exercises.c:80:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c34c5f9
+Thu 14 Mar 2024 01:04:20 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:82:34: error: ‘arr’ undeclared (first use in this function); did you mean ‘arr2’?
+   82 |             result[nuevaTalla] = arr[i];
+      |                                  ^~~
+      |                                  arr2
+exercises.c:82:34: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7ee6e30
